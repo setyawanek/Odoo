@@ -6,15 +6,17 @@
     'description': """
         Long description of module's purpose
     """,
-    'author': "My Company",
+    'author': "PT Abimantra Sistem Solusindo",
     'website': "https://www.yourcompany.com",
     'category': 'Uncategorized',
     'version': '0.1',
-    'depends': ['base'],
+    'depends': ['base',
+                'account',],
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'security/ir.model.access.csv',
+        'data/sequence.xml',
+        'views/branch_views.xml',
+        'views/res_users_views.xml',
     ],
     'demo': [
         'demo/demo.xml',
